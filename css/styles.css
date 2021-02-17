@@ -10,6 +10,8 @@
 --color_light_1: #7b6f71;
 --color_light_2: #fbf9f9;
 
+--color_bg: #000;
+
 /* Typografia */
 --font_body: Roboto, sans-serif;
 --font_big: 2.5rem;
@@ -111,3 +113,107 @@ img{
     font-size: var(--font_smaller);
     font-weight: var(--font_semi_bold);
 }
+
+/* Layout */
+.bd-container {
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb2);
+    margin-right: var(--mb2);
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--color_bg);
+}
+
+/* Nav */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        text-align: center;
+        background-color: var(--color_bg);
+        transition: .4s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+.nav_item {
+    margin-bottom: var(--mb3);
+}
+
+.nav_link {
+color: var(--color_light_2);
+transition: .3s;
+}
+
+.nav_link:hover {
+    color: var(--color_light_1);
+}
+
+.nav_logo, .nav_toggle {
+    color: var(--color_light_2);
+}
+
+.nav_toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show-menu */
+.show-menu {
+    top: var(--header-height);
+}
+
+/* Active Menu */
+.active-link {
+    position: relative;
+}
+
+.active-link::after{
+    content: '';
+    position: absolute;
+    bottom: -.7rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: var(--color_light_1);
+
+}
+
+/* Change BG header */
+.scroll-header {
+    background-color: var(--color_light_2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.scroll-header .nav_logo, .scroll-header .nav_toggle, .scroll-header .nav_link {
+    color: var(--color_dark);
+}
+
+.scroll-header .nav_menu {
+    background-color: var(--color_light_2);
+}
+
+
