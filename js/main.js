@@ -44,7 +44,7 @@ function scrollActive() {
     })
     
 }
-window.addEventListener('scroll', 'scrollActive' )
+window.addEventListener('scroll', 'scrollActive')
 
 // Change BG header
 
@@ -59,3 +59,17 @@ function scrollHeader() {
     }
 }
 window.addEventListener('scroll', scrollHeader)
+
+// Show Scroll Top
+
+function scrollTop() {
+    const scrollTop = document.getElementById('scroll-top')
+
+    if (this.scrolly >= 560) {
+        scrollTop.classList.add('show-scroll');
+    }
+    else {
+        scrollTop.classList.remove('show-scroll');
+    }
+}
+window.addEventListener('scroll', scrollTop)

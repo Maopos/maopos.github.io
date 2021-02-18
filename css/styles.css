@@ -61,7 +61,7 @@ html{
 }
 
 body{
-    margin: var(--header-height);
+    margin: var(--header-height) 0 0 0;
     font-family: var(--font_body);
     font-size: var(--font_normal);
     font-weight: var(--font_medium);
@@ -216,4 +216,117 @@ transition: .3s;
     background-color: var(--color_light_2);
 }
 
+/* Scroll Top */
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background: rgba(123, 111, 113, .7);
+    border-radius: .5rem;
+    z-index: var(--z-tooltip);
+    transition: .6s;
+    visibility: hidden;
+}
 
+.scrolltop:hover {
+    background: var(--color_light_2);
+}
+
+.scrolltop_icon{
+    font-size: 2rem;
+    color:var(--color_light_2)
+}
+
+/* Show Scroll Top*/
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
+/* Home */
+.home {
+    background: #000;
+    overflow: hidden;
+}
+
+.home_container{
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    grid-template-rows: repeat(2, max-content);
+    align-content: space-around;
+    row-gap: 2rem;
+}
+
+.home_data {
+    border-left: 4px solid var(--color_light_2);
+    color: var(--color_light_2);
+    padding-left: 1.5rem;
+    z-index: var(--z-tooltip);
+}
+
+.home_name {
+    font-size: var(--font_big);
+}
+
+.home_greeting, .home_profession {
+    display: block;
+    font-weight: var(--font_bold);
+}
+
+.home_greeting {
+    font-size: .813rem;
+    
+}
+
+.home_profession {
+    font-size: .938rem;
+    margin-bottom: var(--mb3);
+}
+
+.home_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* .home_img img {
+    width: 400px;
+} */
+
+.home_social {
+    display: flex;
+    flex-direction: column;
+}
+
+.home_social-icon {
+    width: max-content;
+    font-size: 1.3rem;
+    margin-bottom: var(--mb2);
+    color: var(--color_light_2);
+}
+
+.home_social-icon:hover {
+    color: var(--color_light_1);
+}
+
+/* Button CV */
+.button {
+    display: inline-block;
+    background: var(--color_1);
+    color: var(--color_light_2);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    transition: .3s;
+}
+
+.button:hover {
+    background: var(--color_dark);
+}
+
+.button-light {
+    background-color: var(--color_light_1);
+}
