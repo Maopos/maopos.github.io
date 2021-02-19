@@ -293,9 +293,9 @@ transition: .3s;
     bottom: 0;
 }
 
-/* .home_img img {
+.home_img img {
     width: 400px;
-} */
+}
 
 .home_social {
     display: flex;

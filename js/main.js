@@ -18,7 +18,7 @@ showMenu('nav-toggle', 'nav-menu')
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction() {
-    const navMenu = document.getElementById(nav-menu)
+    const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -30,7 +30,7 @@ const sections = document.querySelectorAll('section[id]')
 function scrollActive() {
     const scrolly = window.pageYOffset
 
-    sections.forEach(current => {
+    sections.forEach(current =>{
        const sectionHeight = current.offsetHeight
        const sectionTop = current.offsetTop - 50
        sectionId = current.getAttribute('id')
@@ -44,7 +44,7 @@ function scrollActive() {
     })
     
 }
-window.addEventListener('scroll', 'scrollActive')
+window.addEventListener('scroll', scrollActive)
 
 // Change BG header
 
