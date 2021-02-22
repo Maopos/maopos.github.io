@@ -51,7 +51,7 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader() {
     const header = document.getElementById('header')
 
-    if (this.scrolly >= 200) {
+    if (this.scrollY >= 200) {
         header.classList.add('scroll-header');
     }
     else {
@@ -65,7 +65,7 @@ window.addEventListener('scroll', scrollHeader)
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top')
 
-    if (this.scrolly >= 560) {
+    if (this.scrollY >= 200) {
         scrollTop.classList.add('show-scroll');
     }
     else {

@@ -14,7 +14,7 @@
 
 /* Typografia */
 --font_body: Roboto, sans-serif;
---font_big: 2.5rem;
+--font_big: 2rem;
 --font_normal: 0.938rem;
 --font_small: 0.813rem;
 --font_smaller: 0.75rem;
@@ -205,7 +205,7 @@ transition: .3s;
 /* Change BG header */
 .scroll-header {
     background-color: var(--color_light_2);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5 );
 }
 
 .scroll-header .nav_logo, .scroll-header .nav_toggle, .scroll-header .nav_link {
@@ -233,12 +233,12 @@ transition: .3s;
 }
 
 .scrolltop:hover {
-    background: var(--color_light_2);
+    background: var(--color_1);
 }
 
 .scrolltop_icon{
     font-size: 2rem;
-    color:var(--color_light_2)
+    color: var(--color_light_2)
 }
 
 /* Show Scroll Top*/
@@ -256,7 +256,7 @@ transition: .3s;
 .home_container{
     position: relative;
     height: calc(100vh - var(--header-height));
-    grid-template-rows: repeat(2, max-content);
+    grid-template-rows: repeat(1, max-content);
     align-content: space-around;
     row-gap: 2rem;
 }
@@ -278,12 +278,12 @@ transition: .3s;
 }
 
 .home_greeting {
-    font-size: .813rem;
+    font-size: var(--font_small);
     
 }
 
 .home_profession {
-    font-size: .938rem;
+    font-size: var(--font_normal);
     margin-bottom: var(--mb3);
 }
 
@@ -329,4 +329,68 @@ transition: .3s;
 
 .button-light {
     background-color: var(--color_light_1);
+}
+
+/* About */
+
+.about_data {
+    text-align: center;
+}
+
+.about_description span {
+    font-size: var(--font_h2);
+    font-weight: var(--font_semi_bold);
+    color: var(--color_1);
+}
+
+.about_number {
+    font-size: var(--font_h1);
+    color: var(--color_1);
+    display: block;
+}
+
+.about_img {
+    justify-self: center;
+    width: 320px;
+    border-radius: .5rem;
+}
+
+/* Qualification */
+
+.qualification_container {
+    row-gap: 2.5rem;
+}
+
+.qualification_title {
+    font-size: var(--font_h3);
+    color: var(--color_1);
+    margin-bottom: var(--mb2);
+    display: flex;
+    align-items: center;
+}
+
+.qualification_title-icon {
+    font-size: 1.5rem;
+    margin-right: var(--mb1);
+}
+
+.qualification_box {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.qualification_area {
+    font-size: var(--font_normal);
+    color: var(--color_1);
+    margin-bottom: var(--mb1);
+    font-weight: var(--font_medium);
+}
+
+.qualification_icon, .qualification_work {
+    font-size: var(--font_smaller);
+    color: var(--color_light_1);
+}
+
+.qualification_work {
+    display: block;
 }
