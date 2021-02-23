@@ -394,3 +394,37 @@ transition: .3s;
 .qualification_work {
     display: block;
 }
+
+/* Services */
+
+.services_data {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.services_icon, .services_title{
+    margin-bottom: var(--mb2);
+    color: var(--color_1);
+}
+
+.services_icon {
+    font-size: 3rem;
+}
+
+.services_title {
+    font-size: var(--font_h3);
+}
+
+.services_description {
+    margin-bottom: var(--mb4);
+}
+
+.services_data:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
