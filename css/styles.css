@@ -304,7 +304,7 @@ transition: .3s;
 
 .home_social-icon {
     width: max-content;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-bottom: var(--mb2);
     color: var(--color_light_2);
 }
@@ -329,6 +329,15 @@ transition: .3s;
 
 .button-light {
     background-color: var(--color_light_1);
+}
+
+.button-white {
+    background-color: var(--color_light_2);
+    color: var(--color_dark);
+}
+
+.button-white:hover {
+    background-color: var(--color_light_2);
 }
 
 /* About */
@@ -428,3 +437,28 @@ transition: .3s;
     box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
 }
 
+/* Projects in mInd */
+
+.project_container {
+    padding: 1.5rem 1rem;
+    background-color: var(--color_dark);
+    color: var(--color_light_2);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.project_icon, .project_title {
+    margin-bottom: var(--mb1);
+}
+
+.project_icon {
+    font-size: 3.5rem;
+}
+
+.project_title {
+    font-size: 1.5rem;
+}
+
+.project_description {
+    margin-bottom: var(--mb4);
+}
