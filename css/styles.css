@@ -340,6 +340,16 @@ transition: .3s;
     background-color: var(--color_light_2);
 }
 
+.button-link {
+    background: none;
+    color: var(--color_1);
+    padding: 0;
+}
+
+.button-link:hover {
+    background: none;
+}
+
 /* About */
 
 .about_data {
@@ -461,4 +471,58 @@ transition: .3s;
 
 .project_description {
     margin-bottom: var(--mb4);
+}
+
+/* Portfolio */
+
+.portfolio_nav {
+    text-align: center;
+    margin-bottom: var(--mb3);
+}
+
+.portfolio_item {
+    margin: 0 var(--mb2);
+    cursor: pointer;
+}
+
+.portfolio_content {
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.portfolio_img {
+    width: 100%;
+    transition: .4s;
+}
+
+.portfolio_data {
+    padding: 1.5rem;
+}
+
+.portfolio_subtitle {
+    font-size: var(--font_small);
+    color: var(--color_light_1);
+}
+
+.portfolio_title {
+    font-size: var(--font_h3);
+    color: var(--color_1);
+    margin: var(--mb2) 0;
+}
+
+.portfolio_content:hover {
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.portfolio_content:hover .portfolio_img {
+    transform: scale(1.02);
+}
+
+/* Actve menu Portfolio */
+
+.active-portfolio {
+    color: var(--color_dark);
+    font-weight: var(--font_semi_bold);
 }

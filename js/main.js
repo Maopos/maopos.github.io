@@ -42,7 +42,7 @@ function scrollActive() {
         document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
        }
     })
-    
+     
 }
 window.addEventListener('scroll', scrollActive)
 
@@ -72,4 +72,28 @@ function scrollTop() {
         scrollTop.classList.remove('show-scroll');
     }
 }
-window.addEventListener('scroll', scrollTop)
+window.addEventListener('scroll', scrollTop);
+
+
+// MIXITUP FILTER
+
+const mixer = mixitup('.portfolio_container', {
+    selectors: {
+        target: '.portfolio_content'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+// Link active portfolio
+
+const linkPortfolio = document.querySelectorAll('.portfolio_item');
+
+function activePortfolio() {
+    if(linkPortfolio){
+        linkPortfolio.forEach(l => l.classList.remove('active-portfolio'));
+        this.classList.add('active-portfolio');
+    }
+}
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
