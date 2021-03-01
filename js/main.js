@@ -82,7 +82,7 @@ const mixer = mixitup('.portfolio_container', {
         target: '.portfolio_content'
     },
     animation: {
-        duration: 300
+        duration: 400
     }
 });
 
@@ -96,4 +96,5 @@ function activePortfolio() {
         this.classList.add('active-portfolio');
     }
 }
-linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio));
+
