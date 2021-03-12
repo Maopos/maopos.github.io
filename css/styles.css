@@ -520,9 +520,43 @@ transition: .3s;
     transform: scale(1.02);
 }
 
-/* Actve menu Portfolio */
+/* Active menu Portfolio */
 
 .active-portfolio {
     color: var(--color_dark);
     font-weight: var(--font_semi_bold);
+}
+
+/* Testimonial */
+
+.testimonial_content {
+    display: grid;
+    background-color: var(--color_dark);
+    color: var(--color_light_2);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(47, 10, 13, .25);
+}
+
+.testimonial_img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb1);
+}
+
+.testimonial_client {
+    font-size: var(--font_small);
+    color: var(--color_light_1);
+    margin-bottom: var(--mb2);
+}
+
+.swiper-pagination {
+    position: initial;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color_1);
 }
