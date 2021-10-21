@@ -1,468 +1,688 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 
     <title>Mauricio Posada</title>
-    
 
     <!-- iconos -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- Scroll Top -->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bxs-chevrons-up scrolltop_icon'></i>
+      <i class="bx bxs-chevrons-up scrolltop_icon"></i>
     </a>
 
-
-    
     <!-- Header -->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav_logo">Maoposites.</a>
+      <nav class="nav bd-container">
+        <a href="#" class="nav_logo">Maoposites.</a>
 
-            <div class="nav_menu" id="nav-menu">
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">Inicio</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">Sobre mí</a>
+            </li>
+            <li class="nav_item">
+              <a href="#education" class="nav_link">Educación</a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">Servicios</a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">Portafolio</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contacto</a>
+            </li>
+          </ul>
+        </div>
 
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#home" class="nav_link active-link">Inicio</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">Sobre mí</a></li>
-                    <li class="nav_item"><a href="#services" class="nav_link">Servicios</a></li>
-                    <li class="nav_item"><a href="#portfolio" class="nav_link">Portafolio</a></li>
-                    <li class="nav_item"><a href="#contact" class="nav_link">Contacto</a></li>
-                </ul>
-                
-            </div>
-
-            <div class="nav_toggle" id="nav-toggle">
-                <i class='bx bx-food-menu' ></i>
-            </div>
-        </nav>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-food-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home_container bd-container bd-grid">
+          <div class="home_data">
+            <span class="home_greeting">Hola soy</span>
+            <h1 class="home_name">Mauricio Posada</h1>
+            <span class="home_profession">Programador Junior.</span>
+            <a
+              download=""
+              href="./pdf/Mauricio Posada.pdf"
+              class="button button-light home_button"
+              >Descargar CV</a
+            >
+          </div>
 
+          <div class="home_social">
+            <a
+              href="https://www.instagram.com/maoposites/"
+              target="blank"
+              class="home_social-icon"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.github.com/Maopos/"
+              target="blank"
+              class="home_social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mauricio-posada-murillo-787b7b153/"
+              target="blank"
+              class="home_social-icon"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </div>
 
-        <!-- Home -->
-        <section class="home" id="home">
-            <div class="home_container bd-container bd-grid">
-                <div class="home_data">
-                    <span class="home_greeting">Hola soy</span>
-                    <h1 class="home_name">Mauricio Posada</h1>
-                    <span class="home_profession">Programador Junior.</span>
-                    <a download="" href="./pdf/Mauricio Posada.pdf" class="button button-light home_button">Descargar CV</a>
-                </div>
+          <div class="home_img">
+            <img
+              style="width: max-content"
+              src="/img/maoposSinFondo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
-                <div class="home_social">
-                    <a href="https://maoposites.com/" target="blank" class="home_social-icon"><i class='bx bx-building-house' ></i></a>
-                    <a href="https://www.instagram.com/maoposites/" target="blank" class="home_social-icon"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.github.com/Maopos/" target="blank" class="home_social-icon"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/mauricio-posada-murillo-787b7b153/" target="blank" class="home_social-icon"><i class='bx bxl-linkedin-square' ></i></a>
-                </div>
+      <!-- About -->
 
-                <div class="home_img">
-                    <img style="width: max-content;" src="/img/maoposSinFondo.png" alt="">
-                </div>
+      <section class="about section bd-container" id="about">
+        <span class="section-subtitle">My history</span>
+        <h2 class="section-title">Sobre mí</h2>
 
+        <div class="about_container bd-grid">
+          <div class="about_data bd-grid">
+            <p class="about_description">
+              <span>Hola soy<br /></span>Amante de la tecnología y la
+              investigación, con deseos permanentes de evolución personal.
+              Autodidacta con estudios en las principales tecnologías de
+              desarrollo Web y programación. Mi objetivo es ser parte de una
+              empresa como programador junior y proponer soluciones integrales
+              para todo tipo de necesidad. Se valorar la importancia de un buen
+              equipo de trabajo, la comunicación y el mantenimiento de un
+              excelente ambiente laboral.
+            </p>
+          </div>
+          <div>
+            <img src="/img/desk.jpg" alt="" class="about_img" />
+
+            <div>
+              <span class="about_number">15+</span>
+              <span class="achievement">Projects completes.</span>
             </div>
-        </section>
-
-        <!-- About -->
-
-        <section class="about section bd-container" id="about">
-            <span class="section-subtitle">My history</span>
-            <h2 class="section-title">Sobre mí</h2>
-
-            <div class="about_container bd-grid">
-                <div class="about_data bd-grid">
-                    <p class="about_description"><span>Hola soy<br></span>Amante de la tecnología y la investigación, con deseos permanentes de evolución personal. Autodidacta con estudios en las principales tecnologías de desarrollo Web y programación. Mi objetivo es ser parte de una empresa como programador junior y proponer soluciones integrales para todo tipo de necesidad. Se valorar la importancia de un buen equipo de trabajo, la comunicación y el mantenimiento de un excelente ambiente laboral.</p>
-
-                    
-                </div>
-                <div>                    
-                    <img src="/img/desk.jpg" alt="" class="about_img">
-                    <div>
-                        <span class="about_number">05+</span>
-                        <span class="achievement">Projects completes.</span>                    
-                    </div>
-                    <div>
-                        <span class="about_number">10+</span>
-                        <span class="achievement">Learning Certificates.</span>                    
-                    </div>
-                </div>
+            <div>
+              <span class="about_number">10+</span>
+              <span class="achievement">Learning Certificates.</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Qualification -->
+      <!-- Qualification -->
 
-        <section class="qualification section bd-container">
-           <!-- <span class="section-subtitle">Educación</span>
+      <section class="qualification section bd-container" id="education">
+        <!-- <span class="section-subtitle">Educación</span>
            <h2 class="section-title">Qualification</h2> -->
 
-           <div class="qualification_container bd-grid">
-               <!-- <div class="qualification_content">
-                   <h2 class="qualification_title">
-                    <i class='bx bx-briefcase-alt qualification_title-icon'></i>
-                    Work Experience
-                   </h2>
+        <div class="qualification_container bd-grid">
+          <div class="qualification_content">
+            <h2 class="qualification_title">
+              <i class="bx bx-book-bookmark qualification_title-icon"></i>
+              Educación
+            </h2>
 
-                   <div class="bd-grid">
-                       <div class="qualification_data">
-                           <h3 class="qualification_area">Desarrollador Web Frontend</h3>
-                           <div class="qualification_box">
-                               <span class="qualification_work">
-                                    <i class='bx bx-briefcase-alt qualification_icon'></i>
-                                    Adobe - New York
-                               </span>
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">
+                  Herramientas de Colaboración en línea
+                </h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    ICDL - Americas
+                  </span>
 
-                               <span class="qualification_work">
-                                <i class='bx bx-calendar-alt qualification_icon'></i>
-                                Jan 2019 - Aug 2019
-                           </span>
-                           </div>
-                       </div>
-                   </div>
-
-                   <div class="bd-grid">
-                    <div class="qualification_data">
-                        <h3 class="qualification_area">Diseñador UI / UX</h3>
-                        <div class="qualification_box">
-                            <span class="qualification_work">
-                                 <i class='bx bx-briefcase-alt qualification_icon'></i>
-                                 Figma - Lima
-                            </span>
-
-                            <span class="qualification_work">
-                             <i class='bx bx-calendar-alt qualification_icon'></i>
-                             Oct 2019 - Dec 2019
-                        </span>
-                        </div>
-                    </div>
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Dic 2018
+                  </span>
                 </div>
-
-                <div class="bd-grid">
-                    <div class="qualification_data">
-                        <h3 class="qualification_area">Diseñador Web</h3>
-                        <div class="qualification_box">
-                            <span class="qualification_work">
-                                 <i class='bx bx-briefcase-alt qualification_icon'></i>
-                                 Apple Inc - New York
-                            </span>
-
-                            <span class="qualification_work">
-                             <i class='bx bx-calendar-alt qualification_icon'></i>
-                             Jan 2020 - May 2020
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-               </div> -->
-
-               <div class="qualification_content">
-                <h2 class="qualification_title">
-                 <i class='bx bx-book-bookmark qualification_title-icon'></i>
-                 Educación
-                </h2>
-
-                <div class="bd-grid">
-                    <div class="qualification_data">
-                        <h3 class="qualification_area">Herramientas de Colaboración en línea</h3>
-                        <div class="qualification_box">
-                            <span class="qualification_work">
-                                 <i class='bx bx-book qualification_icon'></i>
-                                 ICDL - Americas
-                            </span>
-
-                            <span class="qualification_work">
-                             <i class='bx bx-calendar-alt qualification_icon'></i>
-                             Dic 2018
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bd-grid">
-                    <div class="qualification_data">
-                        <h3 class="qualification_area">Desarrollo Web</h3>
-                        <div class="qualification_box">
-                            <span class="qualification_work">
-                                 <i class='bx bx-book qualification_icon'></i>
-                                 Google Actívate - UniAlicante
-                            </span>
-
-                            <span class="qualification_work">
-                             <i class='bx bx-calendar-alt qualification_icon'></i>
-                             Jun 2020
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bd-grid">
-                    <div class="qualification_data">
-                        <h3 class="qualification_area">Control de Versiones</h3>
-                        <div class="qualification_box">
-                            <span class="qualification_work">
-                                 <i class='bx bx-book qualification_icon'></i>
-                                Fundación Carlos Slim - Mexico DC
-                            </span>
-   
-                            <span class="qualification_work">
-                             <i class='bx bx-calendar-alt qualification_icon'></i>
-                             Nov 2020
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bd-grid">
-                 <div class="qualification_data">
-                     <h3 class="qualification_area">Diseño de Videojuegos Tercera Persona</h3>
-                     <div class="qualification_box">
-                         <span class="qualification_work">
-                              <i class='bx bx-book qualification_icon'></i>
-                              Centro Electricidad y automatización Industrial - Sena
-                         </span>
-
-                         <span class="qualification_work">
-                          <i class='bx bx-calendar-alt qualification_icon'></i>
-                          Dec 2020
-                     </span>
-                     </div>
-                 </div>
-             </div>
-
-             <div class="bd-grid">
-                <div class="qualification_data">
-                    <h3 class="qualification_area">Css - Sass Escencial</h3>
-                    <div class="qualification_box">
-                        <span class="qualification_work">
-                             <i class='bx bx-book qualification_icon'></i>
-                             LinkedIn Learning - Sunnyvale, CA
-                        </span>
-
-                        <span class="qualification_work">
-                         <i class='bx bx-calendar-alt qualification_icon'></i>
-                         Feb 2021
-                    </span>
-                    </div>
-                </div>
+              </div>
             </div>
 
-             <div class="bd-grid">
-                 <div class="qualification_data">
-                     <h3 class="qualification_area">Master JavaScript y Angular - MEAN</h3>
-                     <div class="qualification_box">
-                         <span class="qualification_work">
-                              <i class='bx bx-book qualification_icon'></i>
-                              Udemy - Barcelona
-                         </span>
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">Desarrollo Web</h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    Google Actívate - UniAlicante
+                  </span>
 
-                         <span class="qualification_work">
-                          <i class='bx bx-calendar-alt qualification_icon'></i>
-                          Mar 2021
-                     </span>
-                     </div>
-                 </div>
-             </div>
-
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Jun 2020
+                  </span>
+                </div>
+              </div>
             </div>
 
-           </div>
-        </section>
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">Control de Versiones</h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    Fundación Carlos Slim - Mexico DC
+                  </span>
 
-        <!-- Services -->
-
-        <section class="services section bd-container" id="services">
-            <span class="section-subtitle">Que te puedo ofrecer.</span>
-            <h2 class="section-title">Servicios</h2>
-
-            <div class="services_container bd-grid">
-                <div class="services_data">
-                    <i class='bx bx-code-block services_icon' ></i>
-                    <h3 class="services_title">Diseño Ui/Ux.</h3>
-                    <p class="services_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores illo quasi soluta sequi, neque distinctio eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a mollitia nulla, rem exercitationem?.</p>
-                    <a href="" class="button">Conoce más</a>
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Nov 2020
+                  </span>
                 </div>
-            
-                <div class="services_data">
-                    <i class='bx bx-laptop services_icon'></i>
-                    <h3 class="services_title">Desarrollo Web.</h3>
-                    <p class="services_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores illo quasi soluta sequi, neque distinctio eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a mollitia nulla, rem exercitationem?.</p>
-                    <a href="" class="button">Conoce más</a>
-                </div>
-            
-                <div class="services_data">
-                    <i class='bx bx-pen services_icon'></i>
-                    <h3 class="services_title">Diseño Gráfico y modelado 3D.</h3>
-                    <p class="services_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur maiores illo quasi soluta sequi, neque distinctio eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a mollitia nulla.</p>
-                    <a href="" class="button">Conoce más</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyecciones -->
-        <section class="project section bd-container">
-            <div class="project_container bd-grid">
-                <div class="project_data">
-                    <i class="bx bx-chat project_icon"></i>
-
-                    <div>
-                        <h2 class="project_title">Proyecciones</h2>
-                        <p class="project_description">Trabajo en los siguientes proyectos</p>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button-white">Proximamente</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section class="portfolio section bd-container" id="portfolio">
-            <span class="section-subtitle">Mis Trabajos...</span>
-            <h2 class="section-title">Portafolio</h2>
-
-            <div class="portfolio_nav">
-                <span class="portfolio_item active-portfolio" data-filter="all">All</span>
-                <span class="portfolio_item" data-filter=".web">Web</span>
-                <span class="portfolio_item" data-filter=".ux">Ui/Ux</span>
-                <span class="portfolio_item" data-filter=".app">App</span>
+              </div>
             </div>
 
-            <div class="portfolio_container bd-grid">
-                <div class="portfolio_content mix web">
-                    <a href="#"><img src="./img/work1.jpg" alt="" class="portfolio_img"></a>
-                    <div class="portfolio_data">
-                        <span class="portfolio_subtitle">Desarrollo Web</span>
-                        <a href="#"><h2 class="portfolio_title">Tu Negocio en la Web</h2></a>
-                        <a href="#" class="button button-link">Detalles</a>
-                    </div>
-                </div>
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">
+                  Diseño de Videojuegos Tercera Persona
+                </h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    Centro Electricidad y automatización Industrial - Sena
+                  </span>
 
-                <div class="portfolio_content mix ux">
-                    <a href="#"><img src="./img/work2.jpg" alt="" class="portfolio_img"></a>
-                    <div class="portfolio_data">
-                        <span class="portfolio_subtitle">Desarrollo Web</span>
-                        <a href="#"><h2 class="portfolio_title">Tu Negocio en la Web</h2></a>
-                        <a href="#" class="button button-link">Detalles</a>
-                    </div>
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Dec 2020
+                  </span>
                 </div>
-
-                 <div class="portfolio_content mix app">
-                    <a href="#"><img src="./img/work3.jpg" alt="" class="portfolio_img"></a>
-                    <div class="portfolio_data">
-                        <span class="portfolio_subtitle">Desarrollo Web</span>
-                        <a href="#"><h2 class="portfolio_title">Tu Negocio en la Web</h2></a>
-                        <a href="#" class="button button-link">Detalles</a>
-                    </div>
-                </div>
-
-                
+              </div>
             </div>
-        </section>
 
-        <!-- Testimonios -->
-        <section class="testimonial section bd-container">
-            <span class="section-subtitle">Mis Clientes</span>
-            <h2 class="section-title">Comentarios</h2>
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">Css - Sass Escencial</h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    LinkedIn Learning - Sunnyvale, CA
+                  </span>
 
-            <div class="testimonial_container swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="testimonial_content swiper-slide">
-                        <img src="/img/testimonial1.jpg" alt="" class="testimonial_img">
-                        <h3 class="testimonial_title">Nicolas Hollman</h3>
-                        <span class="testimonial_client">Empresa.sas</span>
-                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eligendi asperiores unde ipsa enim eaque repudiandae beatae, animi, in veritatis doloribus nostrum deleniti iusto ea tempora repellat, praesentium explicabo earum.</p>
-                    </div>
-
-                    <div class="testimonial_content swiper-slide">
-                        <img src="/img/testimonial2.jpg" alt="" class="testimonial_img">
-                        <h3 class="testimonial_title">Edward Castillo</h3>
-                        <span class="testimonial_client">Empresa.sas</span>
-                        <p class="testimonial_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, ipsum dolores atque corporis nisi ad explicabo accusantium doloribus modi at itaque reprehenderit eum optio! Velit ad iusto a totam quod.</p>
-                    </div>
-
-                    <div class="testimonial_content swiper-slide">
-                        <img src="/img/testimonial3.jpg" alt="" class="testimonial_img">
-                        <h3 class="testimonial_title">Daniela Castro</h3>
-                        <span class="testimonial_client">Empresa.sas</span>
-                        <p class="testimonial_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dignissimos dolor illo eius id dolorum repudiandae! Adipisci ducimus vitae, officia in impedit earum laboriosam laborum officiis asperiores quisquam quis tenetur.</p>
-                    </div>
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Feb 2021
+                  </span>
                 </div>
-                <div class="swiper-pagination"></div>
+              </div>
             </div>
-        </section>
 
-        <!-- Contacto -->
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">
+                  Master JavaScript y Angular - MEAN
+                </h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    Udemy - Barcelona
+                  </span>
 
-        <section class="contact section bd-container" id="contact">
-            <span class="section-subtitle">Tu negocio en la Web</span>
-            <h2 class="section-title">Contàctame</h2>
-
-            <div class="contact_container bd-grid">
-                <div class="contact_content bd-grid">
-                    <div class="contact_box">
-                        <i class='bx bxs-factory contact_icon' ></i>
-                        <h3 class="contact_title">Ubicaciòn</h3>
-                        <span class="contact_description">Cali, Colombia.</span>
-                    </div>
-
-                        <div class="contact_box">
-                            <i class='bx bxs-phone contact_icon' ></i>
-                            <h3 class="contact_title">Telefono</h3>
-                            <span class="contact_description">3113009748</span>
-                        </div>
-
-                        <div class="contact_box">
-                            <i class='bx bxs-envelope contact_icon' ></i>
-                            <h3 class="contact_title">Email</h3>
-                            <span class="contact_description">mauricioposadamurillo@gmail.com</span>
-                        </div>                        
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Mar 2021
+                  </span>
                 </div>
-
-                <form action="" class="contact-form">
-                    <div class="contact_inputs">
-                        <input type="text" placeholder="Tu nombre" class="contact_input">
-                        <input type="email" placeholder="Tu email" class="contact_input">
-                    </div>
-                    <div class="contact_inputs">
-                        <input type="text" placeholder="Tu proyecto" class="contact_input">
-                        <input type="number" placeholder="Tu nùmero" class="contact_input">
-                    </div>
-                    <textarea name="" id="" cols="0" rows="7" class="contact_input" placeholder="Dejame un mensaje..."></textarea>
-                    <input type="submit" class="button contact_button">
-                </form>
+              </div>
             </div>
-        </section>
+
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">Scrum fundamentals Certified</h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    SCRUMSTUDY - ACCREDITATION BODY FOR SCRUM AND AGILE
+                  </span>
+
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Jul 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-grid">
+              <div class="qualification_data">
+                <h3 class="qualification_area">
+                  Desarrollo de software (En proceso).
+                </h3>
+                <div class="qualification_box">
+                  <span class="qualification_work">
+                    <i class="bx bx-book qualification_icon"></i>
+                    UNIVERSIDAD TECNOLOGICA PEREIRA | MINTIC
+                  </span>
+
+                  <span class="qualification_work">
+                    <i class="bx bx-calendar-alt qualification_icon"></i>
+                    Apr 2021 - Dec 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">Que te puedo ofrecer.</span>
+        <h2 class="section-title">Servicios</h2>
+
+        <div class="services_container bd-grid">
+          <div class="services_data">
+            <i class="bx bx-code-block services_icon"></i>
+            <h3 class="services_title">Diseño Ui/Ux.</h3>
+            <p class="services_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur maiores illo quasi soluta sequi, neque distinctio
+              eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a
+              mollitia nulla, rem exercitationem?.
+            </p>
+            <a href="" class="button">Conoce más</a>
+          </div>
+
+          <div class="services_data">
+            <i class="bx bx-laptop services_icon"></i>
+            <h3 class="services_title">Desarrollo Web.</h3>
+            <p class="services_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur maiores illo quasi soluta sequi, neque distinctio
+              eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a
+              mollitia nulla, rem exercitationem?.
+            </p>
+            <a href="" class="button">Conoce más</a>
+          </div>
+
+          <div class="services_data">
+            <i class="bx bx-pen services_icon"></i>
+            <h3 class="services_title">Diseño Gráfico y modelado 3D.</h3>
+            <p class="services_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur maiores illo quasi soluta sequi, neque distinctio
+              eveniet cum eum, fugiat fugit ipsam repellendus dolores ullam a
+              mollitia nulla.
+            </p>
+            <a href="" class="button">Conoce más</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyecciones -->
+      <section class="project section bd-container">
+        <div class="project_container bd-grid">
+          <div class="project_data">
+            <i class="bx bx-chat project_icon"></i>
+
+            <div>
+              <h2 class="project_title">Proyecciones</h2>
+              <p class="project_description">
+                Trabajo en los siguientes proyectos
+              </p>
+            </div>
+
+            <div>
+              <a href="#" class="button button-white">Proximamente</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">Mis Trabajos...</span>
+        <h2 class="section-title">Portafolio</h2>
+
+        <div class="portfolio_nav">
+          <span class="portfolio_item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio_item" data-filter=".js">JavaScript</span>
+          <span class="portfolio_item" data-filter=".react">React</span>
+          <span class="portfolio_item" data-filter=".vue">Vue</span>
+        </div>
+
+        <div class="portfolio_container bd-grid">
+
+          <div class="portfolio_content mix js">
+            <a href="#"
+              ><img src="./img/calculadora.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">JavaScript</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Basic Calculator</h2></a
+              >
+              <a href="https://basic-calculator-javascript.netlify.app" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix js">
+            <a href="#"
+              ><img src="./img/todo.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">JavaScript</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Todo App</h2></a
+              >
+              <a href="https://simple-todoapp-javascript.netlify.app" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix js">
+            <a href="#"
+              ><img src="./img/portfolio.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">JavaScript</span>
+              <a href="#"
+                ><h2 class="portfolio_title">PortFolio</h2></a
+              >
+              <a href="https://maopos.github.io" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/memes.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Creador de memes</h2></a
+              >
+              <a href="https://creador-memes.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/citas.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Appointments Manager</h2></a
+              >
+              <a href="https://app-appointment-react.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/cripto.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Criptonite</h2></a
+              >
+              <a href="https://cryptoniteapp.netlify.app" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/imgs.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Free Images</h2></a
+              >
+              <a href="https://images4free.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix vue">
+            <a href="#"
+              ><img src="./img/movie.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">Vue</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Movie Info</h2></a
+              >
+              <a href="https://movieinfo-frontend.netlify.app" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/vehicle.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Vehicular Insurance Quote</h2></a
+              >
+              <a href="https://vehicle-insurance-quote.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/wallet.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Wallet</h2></a
+              >
+              <a href="https://wallet-react.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix react">
+            <a href="#"
+              ><img src="./img/weather.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">React</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Weather App</h2></a
+              >
+              <a href="https://myweather-react.netlify.app/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+          
+          <div class="portfolio_content mix js">
+            <a href="#"
+              ><img src="./img/teko.png" alt="" class="portfolio_img"
+            /></a>
+            <div class="portfolio_data">
+              <span class="portfolio_subtitle">JavaScript</span>
+              <a href="#"
+                ><h2 class="portfolio_title">Teko</h2></a
+              >
+              <a href="https://karinnoviedo.github.io/" class="button button-link" target="blank">Ver Proyecto...</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section class="testimonial section bd-container">
+        <span class="section-subtitle">Mis Clientes</span>
+        <h2 class="section-title">Comentarios</h2>
+
+        <div class="testimonial_container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial_content swiper-slide">
+              <img src="/img/testimonial1.jpg" alt="" class="testimonial_img" />
+              <h3 class="testimonial_title">Nicolas Hollman</h3>
+              <span class="testimonial_client">Empresa.sas</span>
+              <p class="testimonial_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                eligendi asperiores unde ipsa enim eaque repudiandae beatae,
+                animi, in veritatis doloribus nostrum deleniti iusto ea tempora
+                repellat, praesentium explicabo earum.
+              </p>
+            </div>
+
+            <div class="testimonial_content swiper-slide">
+              <img src="/img/testimonial2.jpg" alt="" class="testimonial_img" />
+              <h3 class="testimonial_title">Edward Castillo</h3>
+              <span class="testimonial_client">Empresa.sas</span>
+              <p class="testimonial_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti, ipsum dolores atque corporis nisi ad explicabo
+                accusantium doloribus modi at itaque reprehenderit eum optio!
+                Velit ad iusto a totam quod.
+              </p>
+            </div>
+
+            <div class="testimonial_content swiper-slide">
+              <img src="/img/testimonial3.jpg" alt="" class="testimonial_img" />
+              <h3 class="testimonial_title">Daniela Castro</h3>
+              <span class="testimonial_client">Empresa.sas</span>
+              <p class="testimonial_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                dignissimos dolor illo eius id dolorum repudiandae! Adipisci
+                ducimus vitae, officia in impedit earum laboriosam laborum
+                officiis asperiores quisquam quis tenetur.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+
+      <section class="contact section bd-container" id="contact">
+        <span class="section-subtitle">Tu negocio en la Web</span>
+        <h2 class="section-title">Contàctame</h2>
+
+        <div class="contact_container bd-grid">
+          <div class="contact_content bd-grid">
+            <div class="contact_box">
+              <i class="bx bxs-factory contact_icon"></i>
+              <h3 class="contact_title">Ubicaciòn</h3>
+              <span class="contact_description">Cali, Colombia.</span>
+            </div>
+
+            <div class="contact_box">
+              <i class="bx bxs-phone contact_icon"></i>
+              <h3 class="contact_title">Telefono</h3>
+              <span class="contact_description">3113009748</span>
+            </div>
+
+            <div class="contact_box">
+              <i class="bx bxs-envelope contact_icon"></i>
+              <h3 class="contact_title">Email</h3>
+              <span class="contact_description"
+                >mauricioposadamurillo@gmail.com</span
+              >
+            </div>
+          </div>
+
+          <form action="" class="contact-form">
+            <div class="contact_inputs">
+              <input
+                type="text"
+                placeholder="Tu nombre"
+                class="contact_input"
+              />
+              <input
+                type="email"
+                placeholder="Tu email"
+                class="contact_input"
+              />
+            </div>
+            <div class="contact_inputs">
+              <input
+                type="text"
+                placeholder="Tu proyecto"
+                class="contact_input"
+              />
+              <input
+                type="number"
+                placeholder="Tu nùmero"
+                class="contact_input"
+              />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              class="contact_input"
+              placeholder="Dejame un mensaje..."
+            ></textarea>
+            <input type="submit" class="button contact_button" />
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer_container bd-container">
-            <h1 class="footer_title">Mauricio Posada</h1>
-            <p class="footer_description">Mis redes</p>
+      <div class="footer_container bd-container">
+        <h1 class="footer_title">Mauricio Posada</h1>
+        <p class="footer_description">Mis redes</p>
 
-            <div class="footer_social">
-                <a href="https://maoposites.com/" target="blank" class="footer_link"><i class='bx bx-building-house' ></i></a>
-                <a href="https://www.github.com/Maopos/" target="blank" class="footer_link"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/maoposites/" target="blank" class="footer_link"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/mauricio-posada-murillo-787b7b153/" target="blank" class="footer_link"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            <p class="footer_copy">Copyright 2021 || Maoposites.com</p>
+        <div class="footer_social">
+          
+          <a
+            href="https://www.github.com/Maopos/"
+            target="blank"
+            class="footer_link"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/maoposites/"
+            target="blank"
+            class="footer_link"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mauricio-posada-murillo-787b7b153/"
+            target="blank"
+            class="footer_link"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
+        <p class="footer_copy">Copyright 2021 || Maoposites.com</p>
+      </div>
     </footer>
-
 
     <!-- Mixitup filter -->
     <script src="./js/mixitup.min.js"></script>
@@ -475,5 +695,5 @@
 
     <!-- script main.js -->
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
